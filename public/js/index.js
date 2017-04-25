@@ -25,6 +25,6 @@ messageForm.on('submit', function (e) {
 		from: 'User',
 		text: $('input', messageForm).val()
 	}, function () {
-
+		messageForm.trigger('reset');
 	});
 });
