@@ -76,7 +76,6 @@ messageForm.on('submit', function (e) {
 	e.preventDefault();
 
 	socket.emit('createMessage', {
-		from: 'User',
 		text: $('input', messageForm).val()
 	}, function () {
 		messageForm.trigger('reset');
